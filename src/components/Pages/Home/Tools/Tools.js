@@ -18,7 +18,7 @@ const Tools = () => {
       className="container"
       data-theme={dark ? "dark" : "light"}
     >
-      <h2 className="text-2xl text-center font-serif font-bold mt-36 text-4xl">
+      <h2 className="text-4xl text-center font-serif font-bold mt-36">
         <span className="text-secondary">Tools & kit</span> We Provide
       </h2>
       <p className="text-center">

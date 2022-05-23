@@ -1,0 +1,69 @@
+section {
+    display: flex;
+    align-items: center;
+}
+
+.feedbacks {
+    padding: 2% 7%;
+}
+
+.feedbacks .flex {
+    width: 33.33%;
+    padding: 20px;
+}
+
+.feedbacks .title {
+    text-align: center;
+}
+
+.feedbacks .title h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.feedbacks .title p {
+    margin: 0 auto;
+    font-size: 18px;
+    opacity: 80%;
+    max-width: 50%;
+}
+
+.feedbacks .flex .feedback {
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.feedbacks .flex .feedback:hover {
+    box-shadow: #11B2FA 0px 0px 15px 3px;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.feedbacks .flex .feedback img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.feedbacks .flex .feedback h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #11B2FA;
+}
+
+.feedbacks .flex .feedback h4 {
+    margin: -10px 0 20px 0;
+    font-size: 19px;
+    color: black;
+}
+
+.feedbacks .flex .feedback p {
+    margin: -10px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
