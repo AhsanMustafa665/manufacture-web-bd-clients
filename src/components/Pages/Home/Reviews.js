@@ -24,6 +24,7 @@ const Reviews = () => {
               <img src={c1} alt="item-2" />
               <h2>LAnnie A.</h2>
               <h4>Customer</h4>
+              <h5 className="mb-3">Reviews: ⭐⭐⭐⭐</h5>
               <p>
                 Top Customer Feedback Software & Tools in 2022 — Qualtrics, an
                 experience management, and customer feedback software,
@@ -36,6 +37,7 @@ const Reviews = () => {
               <img src={c2} alt="item-2" />
               <h2>Pat Francis</h2>
               <h4>Customer</h4>
+              <h5 className="mb-3">Reviews: ⭐⭐⭐⭐⭐</h5>
               <p>
                 Customer feedback tools can be part of a software solution
                 designed to help businesses collect, measure, and analyze
@@ -48,6 +50,7 @@ const Reviews = () => {
               <img src={c3} alt="item-2" />
               <h2>John Doe</h2>
               <h4>Customer</h4>
+              <h5 className="mb-3">Reviews: ⭐⭐⭐</h5>
               <p>
                 UserReport is a free customer feedback tool that enables
                 websites to create and customize online surveys. UserReport

@@ -1,0 +1,17 @@
+.users-statistics {
+    margin: 3% 7% 0 7%;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 15px 3px;
+    border-radius: 20px;
+}
+
+.users-statistics .flex {
+    width: 33.33%;
+    padding: 5% 0% 5% 11%;
+}
+
+.users-statistics .flex h2 {
+    font-size: 50px;
+    line-height: 0;
+    font-weight: 700;
+    color: black;
+}

@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../Assests/Images/logo/logo.png";
 // import useAdmin from "../hooks/useAdmin";
 import { useLocation } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
+import { signOut } from "firebase/auth";
 
 const Navbar = ({ children }) => {
   const [dark, setDark] = useState(false);
   const { pathname } = useLocation();
-  console.log(pathname);
+  const [user] = useAuthState(auth);
+  const handleSignOut = () => {
+    signOut(auth);
+  };
 
   // const [admin] = useAdmin();
 
@@ -86,11 +92,15 @@ const Navbar = ({ children }) => {
                   Contact
                 </NavLink>
               </li>
-              <li>
+
+              {user ? (
+                <button onClick={handleSignOut}>Sign out</button>
+              ) : (
                 <NavLink to="/login" className="rounded-lg">
                   Login
                 </NavLink>
-              </li>
+              )}
+              <NavLink to="/signup" className="rounded-lg"></NavLink>
 
               <li class="dropdown dropdown-hover dropdown-end">
                 <label
