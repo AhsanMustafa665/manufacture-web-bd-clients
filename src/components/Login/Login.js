@@ -8,6 +8,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import auth from "../../firebase.init";
 import googlePhoto from ".././Assests/Images/google/google.png";
+import Loading from "../SharedPages/Loading";
 import "./Login.css";
 
 const Login = () => {

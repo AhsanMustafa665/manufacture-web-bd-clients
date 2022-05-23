@@ -3,12 +3,12 @@ import { useNavigate } from "react-router-dom";
 import "./Tool.css";
 
 const Tool = ({ tool }) => {
-  const { picture, name, price, description, minQuan, avaQuan } = tool;
+  const { _id, picture, name, price, description, minQuan, avaQuan } = tool;
   const navigate = useNavigate();
 
-  //   const navigateToolDetail = (_id) => {
-  //     navigate(`/tool/${_id}`);
-  //   };
+  const navigateToolDetail = (_id) => {
+    navigate(`/purchase/${_id}`);
+  };
   return (
     <div className="singal-tool">
       <img src={picture} alt="" />
@@ -24,7 +24,7 @@ const Tool = ({ tool }) => {
         <h6 className="font-semibold ">Minimum quantity: {minQuan} pcs</h6>
         <h6 className="font-semibold">Available quantity: {avaQuan} pcs</h6>
         <h5 className="font-bold ">Price: ${price}</h5>
-        <button>Book Now 🛒</button>
+        <button onClick={() => navigateToolDetail(_id)}>Book Now 🛒</button>
       </div>
     </div>
   );
