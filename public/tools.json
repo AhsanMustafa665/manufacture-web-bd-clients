@@ -4,8 +4,8 @@
         "picture": "https://img.freepik.com/free-vector/realistic-black-white-computer-keyboard_6735-667.jpg",
         "name": "TourX keyboard",
         "description": "A computer keyboard is a peripheral input device modeled after the typewriter keyboard which uses an arrangement",
-        "min-or-quan":"500",
-        "Ava-quan":"10000",
+        "minQuan":"500",
+        "avaQuan":"10000",
         "price":"100"
     },
     
@@ -13,10 +13,10 @@
         "_id": "2",
         "picture": "https://img.freepik.com/free-photo/central-computer-processors-cpu-concept_433905-29.jpg",
         "name": "Intel processor",
-        "description": "Here you can compare desktop or laptop CPUs (from AMD and Intel) with each other. See key differences in specs. ",
-        "min-or-quan":"500",
-        "Ava-quan":"10000",
-        "price":"100"
+        "description": "Here you can compare desktop or laptop CPUs (from AMD and Intel) with each other. See key differences in specs.",
+        "minQuan":"600",
+        "avaQuan":"11000",
+        "price":"230"
     },
     
     {
@@ -24,9 +24,9 @@
         "picture": "https://img.freepik.com/free-photo/laptop-with-joystick_144627-12150.jpg",
         "name": "Joystick",
         "description": "In computers, a joystick is a cursor control device used in computer games and assistive technology.",
-        "min-or-quan":"500",
-        "Ava-quan":"10000",
-        "price":"100"
+        "minQuan":"800",
+        "avaQuan":"18000",
+        "price":"250"
     },
     
     {
@@ -34,9 +34,9 @@
         "picture": "https://img.freepik.com/free-photo/modern-gaming-mouse-professional-pad-black-background-with-clipping-path_374515-339.jpg",
         "name": "A4-tech mouse",
         "description": "Most types of mouse connect to the computer with a cable, and use the computer's power to work. Some types of mouse are wireless.",
-        "min-or-quan":"500",
-        "Ava-quan":"10000",
-        "price":"100"
+        "minQuan":"900",
+        "avaQuan":"17000",
+        "price":"300"
     },
     
     {
@@ -44,9 +44,9 @@
         "picture": "https://img.freepik.com/free-photo/modern-wifi-router-with-speedometer-internet-speed_220873-7514.jpg",
         "name": "Tp-link speedmeter",
         "description": "A router is a device that connects two or more packet-switched networks or subnetworks. It serves two primary functions",
-        "min-or-quan":"500",
-        "Ava-quan":"10000",
-        "price":"100"
+        "minQuan":"700",
+        "avaQuan":"2000",
+        "price":"350"
     },
     
     {
@@ -54,9 +54,9 @@
         "picture": "https://img.freepik.com/free-photo/active-cpu-coolerxacomputer-fan-parts-lye-table_194143-2570.jpg",
         "name": "Startech cooler",
         "description": "Discover a wide range of CPU Cooler including Antec, Cryorig & many more at best price in Bangladesh. Shop online or visit your nearest Star Tech branch.",
-        "min-or-quan":"500",
-        "Ava-quan":"10000",
-        "price":"100"
+        "minQuan":"950",
+        "avaQuan":"13000",
+        "price":"400"
     }
     
 ]

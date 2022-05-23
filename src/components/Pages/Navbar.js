@@ -12,9 +12,9 @@ const Navbar = ({ children }) => {
   // const [admin] = useAdmin();
 
   return (
-    <div class="drawer drawer-end" data-theme={dark ? "dark" : "light"}>
+    <div data-theme={dark ? "dark" : "light"}>
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-      <div class="drawer-content flex flex-col ">
+      <div>
         <div class="w-full navbar bg-base-100 fixed lg:px-20">
           {pathname.includes("dashboard") && (
             <label

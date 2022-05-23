@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./Tool.css";
 
 const Tool = ({ tool }) => {
-  const { picture, name, price, description, minQuan, AvaQuan } = tool;
+  const { picture, name, price, description, minQuan, avaQuan } = tool;
   const navigate = useNavigate();
 
   //   const navigateToolDetail = (_id) => {
@@ -12,16 +12,19 @@ const Tool = ({ tool }) => {
   return (
     <div className="singal-tool">
       <img src={picture} alt="" />
-      <div className="detail-bg">
-        <h5 className="font-bold text-primary">{name}</h5>
+      <div>
+        <h1 className="font-bold text-secondary text-xl">{name}</h1>
+        <br />
         <p>
-          <small className="text-left">{description}</small>
+          <small className="text-left font-serif text-left">
+            {description}
+          </small>
         </p>
-        <h6>{minQuan}</h6>
-        <h6>{AvaQuan}</h6>
-        <h6 className="font-bold">Price: ${price}</h6>
-
-        {/* <button onClick={() => navigateToolDetail(_id)}>Book Now 🛒</button> */}
+        <br />
+        <h6 className="font-semibold ">Minimum quantity: {minQuan} pcs</h6>
+        <h6 className="font-semibold">Available quantity: {avaQuan} pcs</h6>
+        <h5 className="font-bold ">Price: ${price}</h5>
+        <button>Book Now 🛒</button>
       </div>
     </div>
   );
