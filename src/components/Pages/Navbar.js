@@ -65,15 +65,16 @@ const Navbar = ({ children }) => {
 
           <div class="flex-none hidden lg:block">
             <ul class="menu menu-horizontal gap-x-2">
+              {user && (
+                <li>
+                  <NavLink to="/dashboard" className="rounded-lg">
+                    Dashboard
+                  </NavLink>
+                </li>
+              )}
               <li>
                 <NavLink to="/" className="rounded-lg">
                   Home
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink to="/dashboard/add-service" className="rounded-lg">
-                  Dashboard
                 </NavLink>
               </li>
 
@@ -92,6 +93,11 @@ const Navbar = ({ children }) => {
                   Contact
                 </NavLink>
               </li>
+              <li>
+                <NavLink to="/portfolio" className="rounded-lg">
+                  My portfolio
+                </NavLink>
+              </li>
 
               {user ? (
                 <button onClick={handleSignOut}>Sign out</button>
@@ -102,25 +108,6 @@ const Navbar = ({ children }) => {
               )}
               <NavLink to="/signup" className="rounded-lg"></NavLink>
 
-              <li class="dropdown dropdown-hover dropdown-end">
-                <label
-                  tabindex="0"
-                  class="btn btn-primary btn-outline rounded-lg"
-                >
-                  BOOK NOW
-                </label>
-                <ul
-                  tabindex="0"
-                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li>
-                    <a>Item 1</a>
-                  </li>
-                  <li>
-                    <a>Item 2</a>
-                  </li>
-                </ul>
-              </li>
               <label class="swap swap-rotate">
                 <input type="checkbox" onClick={() => setDark(!dark)} />
 
@@ -173,24 +160,11 @@ const Navbar = ({ children }) => {
               Login
             </NavLink>
           </li>
-          <div
-            tabindex="0"
-            class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
-          >
-            <div class="collapse-title text-xl font-medium">Book Now</div>
-            <div class="collapse-content">
-              <li>
-                <NavLink to="/contact" className="rounded-lg">
-                  Quick book
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/login" className="rounded-lg">
-                  Pre book
-                </NavLink>
-              </li>
-            </div>
-          </div>
+          <li>
+            <NavLink to="/portfolio" className="rounded-lg">
+              Login
+            </NavLink>
+          </li>
         </ul>
       </div>
     </div>
