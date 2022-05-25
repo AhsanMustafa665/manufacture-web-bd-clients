@@ -22,5 +22,4 @@
     <li>React bootsrap</li>
     <li>Tailwind.css</li>
     <li>DaisyUI<li>
-    
 </ul>

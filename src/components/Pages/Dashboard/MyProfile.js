@@ -67,11 +67,8 @@ const MyProfile = () => {
               <img src={linkedin} className="w-10" />
             </a>
           </div>
-          ;
         </div>
-        ;
       </div>
-      ;
     </div>
   );
 };

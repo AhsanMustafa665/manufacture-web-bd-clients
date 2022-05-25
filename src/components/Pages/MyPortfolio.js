@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MyPortfolio = () => {
   return (
@@ -50,7 +51,7 @@ const MyPortfolio = () => {
                 </tr>
                 <tr>
                   <th>4</th>
-                  <td>Diploma in CMT</td>
+                  <td>Diploma in Computer</td>
                   <td>Studying</td>
                   <td>---</td>
                   <td>Computer science</td>
@@ -65,6 +66,28 @@ const MyPortfolio = () => {
           <h6 className="font-bold ">CSS ➡️ 70%</h6>
           <h6 className="font-bold ">JAVASCRIPT ➡️ 50%</h6>
         </p>
+        <h4 className="font-bold">Some project below, created with me</h4>
+        <p>1) Doctors repo website.</p>
+        <a
+          className="font-bold text-secondary"
+          href="https://doctors-website-131c4.web.app/"
+        >
+          Here
+        </a>
+        <p>1) Warehouse website.</p>
+        <a
+          className="font-bold text-secondary"
+          href="https://warehouse-website-60530.firebaseapp.com/"
+        >
+          Here
+        </a>
+        <p>1) Perfume products website.</p>
+        <a
+          className="font-bold text-secondary"
+          href="https://the-perfume-reviews-site.netlify.app"
+        >
+          Here
+        </a>
       </p>
     </div>
   );
