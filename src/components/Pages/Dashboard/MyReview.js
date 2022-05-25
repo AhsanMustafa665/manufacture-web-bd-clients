@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
 
 const MyReview = () => {
   const [reviews, setReviews] = useState([]);
+  const [user, loading, error] = useAuthState(auth);
 
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch("https://secret-brushlands-38053.herokuapp.com/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);
+
   let n = 1;
   return (
     <div>
@@ -26,7 +30,7 @@ const MyReview = () => {
             {reviews.map((review) => (
               <tr>
                 <td>{n++}</td>
-                <td>{review.name}</td>
+                <td>{user.displayName}</td>
                 <td>{review.ratings}</td>
                 <td>{review.comments}</td>
               </tr>

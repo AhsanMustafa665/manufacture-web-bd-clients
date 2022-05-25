@@ -1,6 +1,6 @@
 # This is computer tools manufacturing website)
 
-<a href="https://warehouse-website-60530.firebaseapp.com/">Live site hosted (firebase): https://warehouse-website-60530.firebaseapp.com/</a>
+<a href="https://manufacture-web.firebaseapp.com/">Live site hosted (firebase): Here</a>
 
 ## Description :
 

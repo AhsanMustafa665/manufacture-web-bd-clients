@@ -10,7 +10,7 @@ const AddReview = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/reviews", {
+    fetch("https://secret-brushlands-38053.herokuapp.com/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -29,11 +29,13 @@ const AddReview = () => {
       <div class="overflow-x-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
+            placeholder="Rate us"
             {...register("ratings", { required: true })}
             className="border-2 mx-4"
             type="text"
           />
           <input
+            placeholder="Comments here"
             {...register("comments", { required: true })}
             className="border-2 mx-3"
             type="text"
