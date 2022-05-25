@@ -10,16 +10,33 @@ const Purchase = () => {
   const id = useParams();
 
   useEffect(() => {
-    fetch("/tools.json")
+    fetch("http://localhost:5000/service")
       .then((res) => res.json())
       .then((data) => setTools(data));
   }, []);
-  console.log(user);
-  console.log(tools);
 
   const res = tools.filter((item) => item._id === id.id);
   const [item, setItem] = useState(res[0]?.minQuan);
-  console.log(typeof res[0]?.minQuan);
+
+  const placeOrder = () => {
+    const data = {
+      ...res[0],
+      displayName: user?.displayName,
+      email: user?.email,
+    };
+    fetch("http://localhost:5000/orders", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        alert("success");
+      });
+  };
+
   return (
     <div>
       <div class="hero min-h-screen">
@@ -63,6 +80,17 @@ const Purchase = () => {
                 class="input input-bordered w-full max-w-xs"
               />
             </div>
+            <div class="form-control w-full max-w-xs">
+              <label class="label">
+                <span class="label-text">Per price ($)</span>
+              </label>
+              <input
+                value={res[0]?.price}
+                type="text"
+                placeholder="Type here"
+                class="input input-bordered w-full max-w-xs"
+              />
+            </div>
 
             <div class="form-control w-full max-w-xs">
               <label class="label">
@@ -98,7 +126,10 @@ const Purchase = () => {
               Decrease
             </button>
             <br />
-            <button class="mt-5 w-full btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+            <button
+              onClick={() => placeOrder()}
+              class="mt-5 w-full btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+            >
               Place order 🛒
             </button>
           </div>
