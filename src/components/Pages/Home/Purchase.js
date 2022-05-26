@@ -10,7 +10,7 @@ const Purchase = () => {
   const id = useParams();
 
   useEffect(() => {
-    fetch("http://localhost:5000/service")
+    fetch("https://secret-brushlands-38053.herokuapp.com/service")
       .then((res) => res.json())
       .then((data) => setTools(data));
   }, []);
@@ -24,7 +24,7 @@ const Purchase = () => {
       displayName: user?.displayName,
       email: user?.email,
     };
-    fetch("http://localhost:5000/orders", {
+    fetch("https://secret-brushlands-38053.herokuapp.com/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",
